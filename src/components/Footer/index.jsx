@@ -11,12 +11,12 @@ const Footer = () => (
         </div>
         <div className="w-full sm:w-auto">
           <ul className="flex flex-wrap justify-center sm:justify-end space-x-4">
-            <li><Link to="/" className="hover:text-blue-300 text-sm">Home</Link></li>
-            <li><Link to="/cart" className="hover:text-blue-300 text-sm">Cart</Link></li>
-            <li><Link to="/my-orders" className="hover:text-blue-300 text-sm">My Orders</Link></li>
+            <li><Link to="/" className="hover:text-green-300 text-sm">Home</Link></li>
+            <li><Link to="/cart" className="hover:text-green-300 text-sm">Cart</Link></li>
+            <li><Link to="/my-orders" className="hover:text-green-300 text-sm">My Orders</Link></li>
 
-            <li><Link to="/about" className="hover:text-blue-300 text-sm">About</Link></li>
-            <li><Link to="/customer-support" className="hover:text-blue-300 text-sm">Support</Link></li>
+            <li><Link to="/about" className="hover:text-green-300 text-sm">About</Link></li>
+            <li><Link to="/customer-support" className="hover:text-green-300 text-sm">Support</Link></li>
           </ul>
         </div>
       </div>
