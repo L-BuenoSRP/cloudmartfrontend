@@ -15,7 +15,7 @@ spec:
       serviceAccountName: cloudmart-pod-execution-role
       containers:
       - name: cloudmart-frontend-app
-        image: public.ecr.aws/m9z9g0j6/cloudmaster-frontend:latest
+        image: CONTAINER_IMAGE
         env:
         - name: VITE_API_BASE_URL
           value: "http://a497c95720f6642f580cd161545e7a87-502039039.us-east-1.elb.amazonaws.com:5000"
