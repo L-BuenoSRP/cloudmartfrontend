@@ -109,7 +109,7 @@ const AIAssistant = () => {
     <>
       {!isOpen && (
         <div
-          className="fixed bottom-4 right-4 bg-blue-600 text-white p-3 rounded-full shadow-lg cursor-pointer hover:bg-blue-700 transition-colors"
+          className="fixed bottom-4 right-4 bg-green-600 text-white p-3 rounded-full shadow-lg cursor-pointer hover:bg-green-700 transition-colors"
           onClick={() => setIsOpen(true)}
         >
           <MessageCircle className="h-6 w-6" />
@@ -120,7 +120,7 @@ const AIAssistant = () => {
           className="fixed bottom-4 right-4 w-96 bg-white rounded-lg shadow-xl flex flex-col overflow-hidden"
           style={{ height: "600px" }}
         >
-          <div className="bg-blue-600 text-white p-4 flex justify-between items-center">
+          <div className="bg-green-600 text-white p-4 flex justify-between items-center">
             <h3 className="font-semibold">AI Assistant</h3>
             <button
               onClick={() => setIsOpen(false)}
@@ -140,7 +140,7 @@ const AIAssistant = () => {
                 <div
                   className={`inline-block p-3 rounded-lg ${
                     message.sender === "user"
-                      ? "bg-blue-600 text-white"
+                      ? "bg-green-600 text-white"
                       : "bg-gray-200 text-gray-800"
                   }`}
                 >
@@ -162,12 +162,12 @@ const AIAssistant = () => {
               onChange={(e) => setInputMessage(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="Type your message..."
-              className="flex-grow border border-gray-300 rounded-l-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
+              className="flex-grow border border-gray-300 rounded-l-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-600"
               disabled={isLoading}
             />
             <button
               onClick={handleSendMessage}
-              className="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700 transition-colors disabled:bg-gray-400"
+              className="bg-green-600 text-white px-4 py-2 rounded-r-lg hover:bg-green-700 transition-colors disabled:bg-gray-400"
               disabled={isLoading}
             >
               {isLoading ? (
