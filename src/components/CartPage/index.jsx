@@ -82,14 +82,14 @@ const ConfirmationModal = ({
         <div className="flex justify-end space-x-2">
           <button
             onClick={onClose}
-            className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out"
+            className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition duration-150 ease-in-out"
             disabled={isLoading}
           >
             Cancel
           </button>
           <button
             onClick={onConfirm}
-            className="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out flex items-center"
+            className="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition duration-150 ease-in-out flex items-center"
             disabled={isLoading}
           >
             {isLoading ? (
@@ -203,7 +203,7 @@ const CartPage = () => {
             </p>
             <Link
               to="/"
-              className="text-blue-600 hover:underline mt-2 inline-block"
+              className="text-green-600 hover:underline mt-2 inline-block"
             >
               Continue Shopping
             </Link>
@@ -211,7 +211,7 @@ const CartPage = () => {
         ) : cartItems.length === 0 ? (
           <p className="text-xl">
             Your cart is empty.{" "}
-            <Link to="/" className="text-blue-600 hover:underline">
+            <Link to="/" className="text-green-600 hover:underline">
               Continue shopping
             </Link>
           </p>
@@ -231,7 +231,7 @@ const CartPage = () => {
               </p>
               {error && <p className="text-red-500 mt-2">{error}</p>}
               <button
-                className="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors disabled:bg-gray-400"
+                className="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition-colors disabled:bg-gray-400"
                 onClick={() => setIsConfirmationOpen(true)}
                 disabled={loading}
               >
