@@ -63,7 +63,7 @@ const UserProfilePage = () => {
                   name="firstName"
                   value={user.firstName}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-150 ease-in-out text-gray-800 text-lg"
+                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition duration-150 ease-in-out text-gray-800 text-lg"
                 />
               </div>
               <div>
@@ -74,7 +74,7 @@ const UserProfilePage = () => {
                   name="lastName"
                   value={user.lastName}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-150 ease-in-out text-gray-800 text-lg"
+                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition duration-150 ease-in-out text-gray-800 text-lg"
                 />
               </div>
               <div>
@@ -85,7 +85,7 @@ const UserProfilePage = () => {
                   name="email"
                   value={user.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-150 ease-in-out text-gray-800 text-lg"
+                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition duration-150 ease-in-out text-gray-800 text-lg"
                 />
               </div>
               <div>
@@ -96,13 +96,13 @@ const UserProfilePage = () => {
                   name="phone"
                   value={user.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-150 ease-in-out text-gray-800 text-lg"
+                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition duration-150 ease-in-out text-gray-800 text-lg"
                 />
               </div>
               <div className="flex justify-end">
                 <button 
                   type="submit" 
-                  className="px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-150 ease-in-out text-lg"
+                  className="px-6 py-3 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition duration-150 ease-in-out text-lg"
                 >
                   Save Changes
                 </button>
