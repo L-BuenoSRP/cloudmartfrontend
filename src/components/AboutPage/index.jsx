@@ -37,7 +37,7 @@ const AboutPage = () => {
             The Cloud Bootcamp is a leading provider of intensive, hands-on training in cloud computing and artificial intelligence. Through projects like CloudMart, they offer students the opportunity to gain practical experience with real-world applications of cloud and AI technologies.
           </p>
           <p>
-            For more information about The Cloud Bootcamp and their programs, visit <a href="https://www.thecloudbootcamp.com" className="text-green-600 hover:underline" target="_blank" rel="noopener noreferrer">www.thecloudbootcamp.com</a>.
+            For more information about The Cloud Bootcamp and their programs, visit <a href="https://www.thecloudbootcamp.com" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">www.thecloudbootcamp.com</a>.
           </p>
         </div>
       </main>

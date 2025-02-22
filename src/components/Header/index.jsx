@@ -33,13 +33,13 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-green-600 text-white p-4">
+      <header className="bg-blue-600 text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <button onClick={toggleSideBar} className="focus:outline-none">
               <Menu className="h-6 w-6" />
             </button>
-            <Link to="/" className="text-2xl font-bold">CloudMart - Leandro</Link>
+            <Link to="/" className="text-2xl font-bold">CloudMart</Link>
           </div>
           <div className="flex items-center space-x-4">
             <Link to="/profile" className="flex items-center cursor-pointer">
