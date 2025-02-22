@@ -161,7 +161,7 @@ const CustomerSupportPage = () => {
         <div className="w-64 bg-white shadow-md rounded-lg mr-4 p-4 flex flex-col">
           <button
             onClick={createNewThread}
-            className="w-full bg-blue-600 text-white py-2 px-4 rounded flex items-center justify-center mb-4"
+            className="w-full bg-green-600 text-white py-2 px-4 rounded flex items-center justify-center mb-4"
           >
             <Plus size={20} className="mr-2" />
             New Thread
@@ -176,7 +176,7 @@ const CustomerSupportPage = () => {
                   onClick={() => setCurrentThreadId(thread.id)}
                   className={`flex-grow text-left p-2 rounded overflow-hidden truncate ${
                     currentThreadId === thread.id
-                      ? "bg-blue-100 text-blue-800"
+                      ? "bg-green-100 text-green-800"
                       : "hover:bg-gray-100"
                   }`}
                 >
@@ -214,7 +214,7 @@ const CustomerSupportPage = () => {
                 <div
                   className={`max-w-[70%] p-3 rounded-lg ${
                     message.sender === "user"
-                      ? "bg-blue-600 text-white"
+                      ? "bg-green-600 text-white"
                       : "bg-gray-200 text-gray-800"
                   }`}
                 >
@@ -236,13 +236,13 @@ const CustomerSupportPage = () => {
               onChange={(e) => setInputMessage(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="Type your message here..."
-              className="flex-grow border border-gray-300 rounded-l-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
+              className="flex-grow border border-gray-300 rounded-l-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-600"
               disabled={isLoading || !currentThreadId}
               ref={inputRef}
             />
             <button
               onClick={handleSendMessage}
-              className="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700 transition-colors disabled:bg-gray-400"
+              className="bg-green-600 text-white px-4 py-2 rounded-r-lg hover:bg-green-700 transition-colors disabled:bg-gray-400"
               disabled={isLoading || !currentThreadId}
             >
               {isLoading ? (
