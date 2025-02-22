@@ -10,7 +10,7 @@ const OrderStatus = ({ status, onStatusChange }) => {
       case "Pending":
         return "bg-yellow-100 text-yellow-800";
       case "Processing":
-        return "bg-blue-100 text-blue-800";
+        return "bg-green-100 text-green-800";
       case "Shipped":
         return "bg-green-100 text-green-800";
       case "Delivered":
@@ -89,7 +89,7 @@ const ConfirmDeleteModal = ({
         <div className="flex justify-end space-x-2">
           <button
             onClick={onClose}
-            className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out"
+            className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition duration-150 ease-in-out"
             disabled={isLoading}
           >
             Cancel
